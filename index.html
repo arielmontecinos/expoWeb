@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h2 class="titulo">Programación web</h2>
+    </div>
+        <div class="row">
+            <div class="column1">
+                <nav>
+                    <ol>
+                        <li><a href="#herencia">Herencia</a></li>
+                        <li><a href="#cascada">Cascada</a></li>
+                        <li><a href="#pseudoelemento">Pseudoelemtos</a></li>
+                        <li><a href="#pseudoclase">Pseudoclases</a></li>
+                        <li><a href="#visibility">Visibility</a></li>
+                        <li><a href="#OVERFLOW">Overflow</a></li>
+                        <li><a href="#Zindex">Z-index</a></li>
+                    </ol>   
+                </nav>
+            </div>
+            <div class="column2" style="background-color:#bbb;">
+                <!--HERENCIA-->
+                <div class="column2_container">
+                    <div class="column2_container_herencia">
+                        <h1 id="herencia">Herencia</h1>
+                        <p>Cuando establecemos el valor de la propiedad CSS, automaticamente sus descendientes heredad el valor de su propiedad.<br><br>
+                        <b>Ejemplo:</b><br>
+                        Admiro mi <b>capacidad</b> para soportar <strong>gente</strong> que merece una hermosa <i>patada</i> en el <small>C*L*</small>  
+                        </p>
+                    </div>
+                </div>
+                <!--Columna contenedor-->
+                <div class="column2_container">
+                    <!--Cascada-->
+                    <div class="column2_container_cascada"></div>
+                        <h1 id="cascada">Cascada</h1>
+                        <p>En un primer nivel de simplicidad, la cascada en las hojas de estilo significa que el orden de las reglas importa en CSS: cuando dos reglas tienen la misma especificidad, se aplica la que aparece en último lugar en el CSS.   
+                        </p>
+                        <img src="img/cascada.jpg" alt="dos h1 se aplica la ultima">
+                        <!--ESPECIFICIDAD-->
+                        <h1>Especificidad</h1>
+                        <p>
+                            Los navegadores deciden qué valores de una propiedad CSS son más relevantes para un elemento.<br>
+                            La especificidad está basada en las reglas de coincidencia que están compuestas por diferentes tipos de selectores CSS.  
+                        </p>
+                        <div class="especidicidad">
+                            <h3>*!important</h3>
+                            <h3 >Estilos en línea</h3>
+                            <h3 style="color:purple" class="clases" id="identificador">ID</h3>
+                            <h3 class="clases">clases,atributos</h3>
+                            <h3>elementos</h3>
+                            <h3>selector universal</h3>
+                        </div>
+                    </div>
+
+                    <!--SPEUDOELEMENTOS-->
+                    <div class="column2_container">
+                        <h1 id="pseudoelemento">Pseudoelmentos</h1>
+                        <p>
+                         Los pseudoelemntos suelen hacer referencia a determinadas partes del elemento. 
+                        </p>
+                        Ejemplos:<br>
+                        <p>¡Puede usar el pseudoelemento <b>::first-letter</b> para agregar un efecto especial al primer carácter de un texto!
+                        </p>
+                        <p>
+                            Puede usar el pseudoelemento <b>::first-line</b> para agregar un efecto especial a la primera línea de un texto.
+                        </p>
+                        <!-- first-leter y firts-line -->
+                        <p>
+                            Puede combinar los pseudoelementos <b>::first-letter</b> y <b>::first-line</b> para agregar un efecto especial a la primera letra y la primera línea de un texto.
+                        </p>
+                        <!--before-->
+                        <p>
+                            El pseudo-elemento <b>::before</b> inserta contenido antes del contenido de un elemento..
+                        </p>
+                        <!--after-->
+                        <p>
+                            El pseudo-elemento <b>::after</b> inserta contenido después del contenido de un elemento.
+                        </p>
+
+                    </div>
+                    <!--PSEUDOCLASES-->
+                    <div class="column2_container">
+                        <h1 id="pseudoclase" >Pseudoclases</h1>
+                        <p>
+                            Mientras los pseudoclases suelen hacer referencia al estado del elemento.
+                        </p>
+                        <p><b><a class="un"href="https://google.com">Este es un link</a></b></p>
+                        <p><b><a class="dos"href="#">Este es un link</a></b></p>
+                        <p><b><a class="tres"href="#">Este es un link</a></b></p>
+                        <p><b><a class="cuatro"href="#">Este es un link</a></b></p>
+                        <p><b><a class="cinco"href="#">Este es un link</a></b></p>
+                    </div>
+                    <div class="column2_container">
+                        <!--VISIBILITY-->
+                        <h1 id="visibility">La propiedad Visisbility</h1>
+                        <p>Los elementos ocultos ocupan espacio en la página. ¡Use la propiedad visibility para ocultar y eliminar un elemento del diseño del documento</p>
+                        <h2 class="a">Este es el encabezado visible</h2>
+                        <h2 class="b">Este es el encabezado oculto</h2>
+                        <h2 class="c">Este el el encabezado visible</h2>
+                        <p>Observe que el encabezado oculto sigue ocupado espacio en la página.</p>
+                    </div>
+                    <div class="column2_container">
+                        <!--OVERFLOW-->
+                        <h1 id="OVERFLOW">Overflow</h1>
+                        <p>
+                        La propiedad overflow especifica sin recortar el contenido o  agregar barras de desplazamiento cuando el contenido de un elemento es demasiado grande para caber en el área especificada.
+                        </p>
+                        <h4>Desbordamiento: visible</h4>
+                        <h4>Desbordamiento: oculto<q>hidden</q></h4>
+                        <h4>Desbordamiento: scroll</h4>
+                        <h4>Desbordamiento: automatico</h4>
+                        <h4><q>desbordamiento-x</q> y <q>desbordamiento-y</q></h4>
+                        <p class="overflow">
+                            Puede usar la propiedad de desbordamiento cuando desee tener un mejor control del diseño. La propiedad de desbordamiento especifica qué sucede si el contenido desborda el cuadro de un elemento.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, aperiam!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, nisi et? Magni, officiis amet eligendi vel hic aut accusantium ad doloribus necessitatibus rem deserunt mollitia unde enim, autem quia. Ut fugit autem exercitationem doloremque facilis.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis pariatur minima perferendis consectetur esse similique alias exercitationem molestiae dignissimos possimus aspernatur, reprehenderit cupiditate deleniti, aut ullam fugit sed eos voluptatum laborum veniam? Tempora animi nulla error, porro sint placeat voluptatum fugit consequuntur itaque sed quaerat.
+                        </p>
+                    </div>
+                    <div class="column2_container">
+                        <div>
+                            <!--Z-INDEX-->
+                            <h1 id="Zindex">z-index</h1>
+                            
+                            <p>
+                                La propiedad <b>z-index</b>especifica el orden de apilamiento de un elemento (qué elemento debe colocarse delante o detrás de los demás).
+                            </p>
+                            <div class="container_z-index">
+                                <div class="caja1">caja1 (z-index: 1)</div>
+                                <div class="caja2">caja2 (z-index: 3)</div>
+                                <div class="caja3">caja3(z-index: 2)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>

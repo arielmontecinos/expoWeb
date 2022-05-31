@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    font-size:20px;
+     
+  }
+  
+  body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  /*titulo de encabezado*/
+  .titulo{
+    font-size:40px;
+    text-shadow:-1px -2px 0px rgb(216, 223, 228);
+  }
+  /*lista*/
+  li{
+    padding:4px;
+    color:#911433
+  }
+  /*h1*/
+  h1{
+    font-size:25px;
+    color:#ff0040;
+    text-shadow:1px 2px 0px rgb(0, 0, 0)
+  }
+
+  .header {
+    background-color: #ad3150;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+ 
+  .column2 {
+    padding: 10px;
+    height: 70vh;
+  }
+  .column1 {
+    padding: 10px;
+    height:70vh; 
+    width:200px;
+    background:rgb(235, 216, 108)
+  }
+  .column2{
+      overflow: auto;
+  }
+  .footer {
+    background-color: #437ec2;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  
+  /*HERENCIA CSS*/
+  /*EJEMPLOS*/
+b,strong,i,small{
+    color:red;
+}
+
+.column2_container{
+      margin:80px;
+  }
+
+  /*ESPECIFICIDAD*/
+  /* .especidicidad{
+      text-align:center;
+  }
+  h3{
+      background:red;
+  }
+  .clases{
+      background:rgb(184, 90, 196);
+  }
+  #identificador{
+      background:greenyellow;
+  }
+h3{
+    background:greenyellow !important; 
+} */
+
+
+
+/*Pseudoelementos*/
+
+/* p::first-letter{
+    color:red;
+    font-size:xx-large;
+}
+p::first-line{
+    color:rgb(114, 31, 209);
+    font-size:xx-large;
+}
+p::before{
+    content:"@";
+}
+p::after{
+    content:"@";
+} */
+
+
+/*Pseudoclases*/
+a.un:visited {color:red;}
+a.un:hover {color:#ffcc00;}
+
+
+a.dos:visited {color:red;}
+a.dos:hover {font-size:150%;}
+
+
+a.tres:visited {color:red}
+a.tres:hover {background:#66ff66;}
+
+
+a.cuatro:visited {color:red;}
+a.cuatro:hover {font-family:monospace;}
+
+a.cinco{text-decoration:none;}
+a.cinco:visited {color:red;text-decoration:none;}
+a.cinco:hover {text-decoration:underline;}
+
+/*Visibilidad */
+h2.a {
+  visibility: visible;
+}
+
+h2.b {
+  visibility: hidden;
+}
+
+/*Overflow*/
+p.overflow {
+  
+  background-color: coral;
+  width: 300px;
+  height: 65px;
+  border: 1px solid;
+  overflow-x:auto;    /*overflow*/
+}
+
+
+
+/*Z-index*/
+.container_z-index{
+  position: relative;
+}
+
+.caja1 {
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+}
+
+.caja2 {
+  position: absolute;
+  z-index: 3; /* gray box will be above both green and black box */
+  background: lightgray;
+  height: 60px;  
+  width: 70%;
+  left: 50px;
+  top: 50px;
+}
+
+.caja3 {
+  position: absolute;
+  z-index: 2; /* green box will be above black box */
+  background: lightgreen;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+
